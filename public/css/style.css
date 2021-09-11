@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto+Mono:wght@300&display=swap');
+
+
+:root{
+  --white: #ffffff;
+  --dark-grey: #DFDFDF;
+  --easy-brown: #E6DACA;
+  --mid-brown: #CBAC8F;
+  --strong-brown: #7E6F5C;
+  --easy-grey: #4A4A4A;
+}
+body{
+  background-color: var(--dark-grey);
+  font-family: 'Roboto Mono', monospace;
+}
+.bg-white{
+  background-color: var(--white);
+}
+.container-custom{  
+  width: 500px;
+  max-width: 96%;
+  margin:auto;
+  background-color: var(--white);
+}
+header{
+  background-color: var(--easy-brown);
+  width: 500px;
+  max-width: 100%;
+  margin: auto;
+  position: relative;
+}
+.header-flower-top{
+  background: url(/img/header-flower-top.png) no-repeat center top;
+  width: 100%;
+  height: 115px;
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.header-flower-bottom{
+  background: url('/img/header-flower-bottom.png') no-repeat bottom;
+  width: 100%;
+  height: 100px;
+  background-size: contain;
+  position: absolute;
+  bottom:0;
+  left:0;
+  right:0;
+}
+.content{
+  color: var(--easy-grey);
+  margin: 20vh 0;
+}
+.content h2, .content h4{
+  font-family: 'Abril Fatface', cursive;
+  color: var(--strong-brown);
+}
+.content img{
+  width: 280px;
+  max-width: 100%;
+  margin: 25px auto;
+  display: table;
+}
+.box{
+  background-color: var(--mid-brown);
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: .8rem;
+}
+section{
+  width: 500px;
+  max-width: 100%;
+  margin: auto;
+}
