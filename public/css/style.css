@@ -13,8 +13,16 @@ body{
   background-color: var(--dark-grey);
   font-family: 'Roboto Mono', monospace;
 }
-.bg-white{
-  background-color: var(--white);
+section{
+  width: 500px;
+  max-width: 100%;
+  margin: auto;
+}
+.bg-easy-brown {
+  background-color: var(--easy-brown);
+}
+.bg-mid-brown {
+  background-color: var(--mid-brown);
 }
 .container-custom{  
   width: 500px;
@@ -22,6 +30,10 @@ body{
   margin:auto;
   background-color: var(--white);
 }
+/* ===== 
+  Banner
+  ===== */
+
 header{
   background-color: var(--easy-brown);
   width: 500px;
@@ -49,15 +61,15 @@ header{
   left:0;
   right:0;
 }
-.content{
+.content-banner{
   color: var(--easy-grey);
   margin: 20vh 0;
 }
-.content h2, .content h4{
+.content-banner h2, .content-banner h4{
   font-family: 'Abril Fatface', cursive;
   color: var(--strong-brown);
 }
-.content img{
+.content-banner img{
   width: 280px;
   max-width: 100%;
   margin: 25px auto;
@@ -69,8 +81,143 @@ header{
   padding: 5px 10px;
   font-size: .8rem;
 }
-section{
-  width: 500px;
+/* ===== 
+  Surah Section
+  ===== */
+
+.content-surah{
+  background-color: var(--strong-brown);
+}
+.surah-flower-top{
+  background: url('/img/surah-flower-top.png') no-repeat center 30px;
+  width: 404px;
+  max-width: 100%;
+  height: 100px;
+  background-size:contain;
+}
+.surah-flower-bottom{
+  background: url('/img/surah-flower-bottom.png') no-repeat center top;
+  width: 204px;
+  max-width: 100%;
+  height: 100px;
+  background-size: contain;
+  margin: auto;
+}
+/* ===== 
+  Couple Section
+  ===== */
+
+.content-couple .bismillah-png{
+  width: 224px;
   max-width: 100%;
   margin: auto;
+  display: table;
+}
+.content-couple h1, .content-couple h4, .content-couple h5{
+  font-family: 'Abril Fatface', cursive;
+  color: var(--strong-brown);
+}
+.content-couple p{
+  color: var(--easy-grey);
+}
+.content-couple .couple-circle{
+  max-width: 100%;
+  width: 305px;
+  margin: auto;
+  display: table;
+}
+/* ===== 
+  Maps Section
+  ===== */
+
+.content-maps h4{
+  font-family: 'Abril Fatface', cursive;
+  color: var(--strong-brown);
+}
+.content-maps img{
+  width: 100px;
+  margin: auto;
+  display: table;
+}
+.content-maps iframe{
+  width:100%;
+  height: 250px;
+  border:0;
+}
+.content-maps a{
+  border:2px solid var(--strong-brown);
+  color:var(--white);
+  padding: 10px 15px;
+  background-color: var(--strong-brown);
+  text-decoration: none;
+  border-radius: 50px;
+  width: 150px;
+  max-width: 100%;
+  font-size: .8rem;
+  margin: auto;
+  transition: all .50s ease-in-out;
+}
+.content-maps a:hover{
+  background-color: var(--white);
+  color:var(--strong-brown);
+}
+/* ===== 
+  Akad Section
+  ===== */
+
+.content-akad{
+  background: var(--strong-brown);
+}
+.content-akad h4{
+  font-family: 'Abril Fatface', cursive;
+  color: var(--mid-brown);
+}
+.content-akad img{
+  width: 100px;
+  margin: auto;
+  display: table;
+}
+/* ===== 
+  Streaming Section
+  ===== */
+
+.content-streaming{
+  border: 2px solid var(--strong-brown);  
+  border-radius: 50px 0 50px 0;
+  height: 100vh;
+  position: relative;
+}
+.content-streaming img{
+    position: absolute;
+    width: 150px;
+}
+.right-border-flower{
+  top:0;
+  right: 0;
+}
+.left-border-flower{
+  left:0;
+  bottom: 0;
+}
+.content-streaming h4{
+  font-family: 'Abril Fatface', cursive;
+  color: var(--strong-brown);
+}
+.content-streaming a{
+  border:2px solid var(--strong-brown);
+  color:var(--white);
+  padding: 10px 15px;
+  background-color: var(--strong-brown);
+  text-decoration: none;
+  border-radius: 50px;
+  width: 220px;
+  max-width: 100%;
+  font-size: .8rem;
+  transition: all .50s ease-in-out;
+  max-width: 100%;
+  margin: auto;
+}
+.content-streaming a:hover{
+  background-color: var(--white);
+  color:var(--strong-brown);
 }

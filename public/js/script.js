@@ -1,6 +1,6 @@
 // Count Down
 
-var countDownDate = new Date("Dec 8, 2021 06:00:00").getTime();
+var countDownDate = new Date("Dec 4, 2021 09:00:00").getTime();
 var x = setInterval(function() {
   var now = new Date().getTime();
   var distance = countDownDate - now;
@@ -18,6 +18,9 @@ var x = setInterval(function() {
   
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
+    document.getElementById("days-countdown").innerHTML = 0;
+    document.getElementById("hours-countdown").innerHTML = 0;
+    document.getElementById("minutes-countdown").innerHTML = 0;
+    document.getElementById("seconds-countdown").innerHTML = 0;
   }
 }, 1000);
