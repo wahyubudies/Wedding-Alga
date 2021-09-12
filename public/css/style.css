@@ -146,9 +146,9 @@ header{
 }
 .content-maps a{
   border:2px solid var(--strong-brown);
-  color:var(--white);
+  color:var(--strong-brown);
   padding: 10px 15px;
-  background-color: var(--strong-brown);
+  background-color: var(--white);
   text-decoration: none;
   border-radius: 50px;
   width: 150px;
@@ -158,8 +158,8 @@ header{
   transition: all .50s ease-in-out;
 }
 .content-maps a:hover{
-  background-color: var(--white);
-  color:var(--strong-brown);
+  background-color: var(--strong-brown);
+  color:var(--white;
 }
 /* ===== 
   Akad Section
