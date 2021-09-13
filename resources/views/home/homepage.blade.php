@@ -52,7 +52,7 @@
           </div>
           <div class="header-flower-bottom"></div>
         </header>
-        <section class="bg-white p-5">
+        <section class="bg-white p-4">
           <div class="surah-flower-top"></div>
           <div class="content-surah px-4 py-5">
             <p class="mb-0 text-white text-center">
@@ -62,7 +62,7 @@
           </div>
           <div class="surah-flower-bottom"></div>
         </section>
-        <section class="bg-mid-brown p-5">
+        <section class="bg-mid-brown p-4">
           <div class="content-couple text-center">
             <img src="{{ asset('img/bismillah.png') }}" alt="" class="bismillah-png">
             <h4 class="mt-4 mb-3">
@@ -88,7 +88,7 @@
             </p>
           </div>
         </section>
-        <section class="bg-white p-5">
+        <section class="bg-white p-4">
           <div class="content-maps text-center">
             <h4>Lokasi Acara</h4>
             <img src="{{ asset('img/maps-flower.png') }}" alt="">
@@ -97,7 +97,7 @@
             <a href="https://www.google.com/maps/place/Jl.+Letjend+S.+Parman+No.87,+Purwantoro,+Kec.+Blimbing,+Kota+Malang,+Jawa+Timur+65126/@-7.948304,112.639991,15z/data=!4m5!3m4!1s0x2dd629c658012e69:0xd741a502d6f95888!8m2!3d-7.9483042!4d112.6399905?hl=en" class="mt-3 mx-auto d-block">Lihat Lokasi</a>
           </div>
         </section>
-        <section class="bg-white p-5">
+        <section class="bg-white p-4">
           <div class="content-akad text-center px-4 py-5 text-white">
             <h4>Akad Nikah Wildan & Lia</h4>
             <img src="{{ asset('img/akad-flower.png') }}" alt="">
@@ -106,7 +106,7 @@
             <p>Semoga kita semua selalu dalam lindungan, berkah, dan hidayah Allah SWT. Aamiin.</p>
           </div>
         </section>
-        <section class="bg-easy-brown p-5 text-center">
+        <section class="bg-easy-brown p-4 text-center">
           <div class="content-streaming px-4 py-5 text-center d-flex align-items-center justify-content-center flex-column">
             <img src="{{ asset('img/right-border-flower.png') }}" alt="" class="right-border-flower">
             <h4 class="mb-4">Live Streaming</h4>
@@ -114,6 +114,73 @@
             <a href="#" class="d-block my-5">Menuju Streaming Youtube</a>
             <p>Dikarenakan LIVE YouTube hanya dapat ditampilkan ke sejumlah subscribers yang terbatas, silahkan subscribe terlebih dahulu agar dapat mengikuti jalannya aqad nikah.</p>
             <img src="{{ asset('img/left-border-flower.png') }}" alt="" class="left-border-flower">
+          </div>
+        </section>
+        <section class="bg-white">
+          <div class="content-ucapan text-center p-4">
+            <h4>Kirim Ucapan</h4>
+            <img src="{{ asset('img/maps-flower.png') }}" alt="">
+            <form action="" class="text-left my-4">
+              <div class="form-group">
+                <small class="mb-2 d-block">Nama Lengkap*</small>
+                <input type="text" class="form-control shadow-none" placeholder="ex: Muhammad Jailani">
+              </div>
+              <div class="form-group">
+                <small class="mb-2 d-block">Lokasi*</small>
+                <input type="text" class="form-control shadow-none" placeholder="ex: Kota Malang">
+              </div>
+              <div class="form-group mb-1">
+                <small class="mb-2 d-block">Kehadiran*</small>
+                <div class="d-flex flex-wrap">
+                  <label class="container-radio d-flex align-items-center mr-3">hadir
+                    <input type="radio" checked="checked" name="radio">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container-radio d-flex align-items-center mr-3">akan hadir
+                    <input type="radio" name="radio">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container-radio d-flex align-items-center">tidak hadir
+                    <input type="radio" name="radio">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="form-group">
+                <small class="mb-2 d-block">Ucapan*</small>
+                <textarea name="" id="" cols="30" rows="10" class="form-control shadow-none" placeholder="ex: Semoga menjadi pasangan yang sakinah mawadah warahmah."></textarea>
+              </div>
+            </form>
+
+            <div class="scroll-ucapan p-4">
+              @for($i = 1; $i < 10; $i++)
+              <div class="card-ucapan text-left mb-3">
+                <div class="header-card-ucapan d-flex align-items-center mb-4">
+                  <div>
+                    <p class="mb-0"><b>Bu Opik</b></p>
+                    <span class="badge badge-pill badge-success">Hadir</span>
+                    <span>Di Temanggung</span>
+                  </div>
+                </div>  
+                <div class="body-card-ucapan">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, magni eos facilis porro provident alias quod voluptatem placeat, quibusdam iste cupiditate, nesciunt sed vitae hic? Corrupti praesentium atque possimus recusandae.</p>
+                </div>
+              </div>
+              @endfor
+            </div>
+
+          </div>
+        </section>
+        <section class="bg-white">
+          <div class="content-amplop text-center p-4">
+            <h4>Amplop Digital</h4>
+            <img src="{{ asset('img/akad-flower.png') }}" alt="">
+            <p>Doa Restu Anda merupakan karunia yang sangat berarti bagi kami.</p>
+            <p>Dan jika memberi adalah ungkapan tanda kasih Anda, Anda dapat memberi kado secara cashless.</p>
+            <img class="my-4" src="https://logos-download.com/wp-content/uploads/2017/03/BCA_logo_Bank_Central_Asia.png" alt="">
+            <p>No. Rekening : 079667722</p>
+            <p><b>a.n. Wahyu Budi Setyawan</b></p>
+            <button onclick="copyRekening()" class="mt-3">Salin Rekening</button>
           </div>
         </section>
       </div>
