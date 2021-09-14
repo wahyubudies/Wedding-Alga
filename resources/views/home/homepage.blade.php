@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Wildan & Lia's Wedding</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" integrity="sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 </head>
 <body>
@@ -178,16 +179,33 @@
             <p>Doa Restu Anda merupakan karunia yang sangat berarti bagi kami.</p>
             <p>Dan jika memberi adalah ungkapan tanda kasih Anda, Anda dapat memberi kado secara cashless.</p>
             <img class="my-4" src="https://logos-download.com/wp-content/uploads/2017/03/BCA_logo_Bank_Central_Asia.png" alt="">
-            <p>No. Rekening : 079667722</p>
+            <p>No. Rekening : <b id="rekening">079667722</b></p>
             <p><b>a.n. Wahyu Budi Setyawan</b></p>
-            <button onclick="copyRekening()" class="mt-3">Salin Rekening</button>
+            <button onclick="copyToClipboard('rekening')" class="mt-3">Salin Rekening</button>
           </div>
         </section>
+        <section class="bg-white">
+          <div class="content-farewell text-center pt-5 pb-4 pr-4 pl-4">
+            <img class="circle-flower" src="{{ asset('img/header-flower-circle.png') }}" alt="">
+            <p>Merupakan suatu kehormatan dan kebahagiaan bagi kami, apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu. Atas kehadiran dan doa restunya, kami mengucapkan terima kasih.</p>
+            <h4 class="my-5">Wassalamu'alaikum Wr. Wb.</h4>
+            <h2 class="my-5">
+              Wildan & Lia
+            </h2>
+            <img src="{{ asset('img/maps-flower.png') }}" alt="">
+          </div>
+        </section>
+        <footer>
+          <div class="content-footer bg-white pb-3 pt-3 text-center">
+            &copy; <small>Cerita Cintaku from ALGA Creative</small>
+          </div>
+        </footer>
       </div>
     </div>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js" integrity="sha512-wV7Yj1alIZDqZFCUQJy85VN+qvEIly93fIQAN7iqDFCPEucLCeNFz4r35FCo9s6WrpdDQPi80xbljXB8Bjtvcg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="{{ asset('js/script.js') }}"></script>
 </body>
 </html>

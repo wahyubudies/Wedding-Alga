@@ -300,6 +300,44 @@ header{
 /* ===== 
   Amplop Section
   ===== */
+
+/* .tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+} */
 .content-amplop h4{
   font-family: 'Abril Fatface', cursive;
   color: var(--mid-brown);
@@ -325,4 +363,27 @@ header{
 .content-amplop button:hover{
   background-color: var(--strong-brown);
   color:var(--white);
+}
+/* ===== 
+  Firewell Section
+  ===== */
+.content-farewell h4, .content-farewell h2{
+  font-family: 'Abril Fatface', cursive;
+  color: var(--strong-brown);
+}
+.content-farewell img.circle-flower{
+  width: 280px;
+  max-width: 100%;
+  margin: 25px auto;
+  display: table;
+}
+.content-farewell img{
+  width: 100px;
+  margin: auto;
+  display: table;
+}
+footer{
+  width: 500px;
+  max-width: 100%;
+  margin: auto;
 }
