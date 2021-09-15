@@ -96,7 +96,7 @@
             <img src="{{ asset('img/maps-flower.png') }}" alt="" data-aos="fade-up">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.4890783364594!2d112.63780181477918!3d-7.948304194274966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd629c658012e69%3A0xd741a502d6f95888!2sJl.%20Letjend%20S.%20Parman%20No.87%2C%20Purwantoro%2C%20Kec.%20Blimbing%2C%20Kota%20Malang%2C%20Jawa%20Timur%2065126!5e0!3m2!1sen!2sid!4v1631360080462!5m2!1sen!2sid" class="mt-4" allowfullscreen="" loading="lazy"></iframe>
             <p class="my-4"><b>Ballroom Atria Hotel Malang</b> <br> Jl. Letjend S. Parman no 87-89, Purwantoro - Blimbing. Malang</p>
-            <a href="https://www.google.com/maps/place/Jl.+Letjend+S.+Parman+No.87,+Purwantoro,+Kec.+Blimbing,+Kota+Malang,+Jawa+Timur+65126/@-7.948304,112.639991,15z/data=!4m5!3m4!1s0x2dd629c658012e69:0xd741a502d6f95888!8m2!3d-7.9483042!4d112.6399905?hl=en" class="mt-3 mx-auto d-block">Lihat Lokasi</a>
+            <a href="https://www.google.com/maps/place/Jl.+Letjend+S.+Parman+No.87,+Purwantoro,+Kec.+Blimbing,+Kota+Malang,+Jawa+Timur+65126/@-7.948304,112.639991,15z/data=!4m5!3m4!1s0x2dd629c658012e69:0xd741a502d6f95888!8m2!3d-7.9483042!4d112.6399905?hl=en" target="_blank" class="mt-3 mx-auto d-block">Lihat Lokasi</a>
           </div>
         </section>
         <section class="bg-white p-4">

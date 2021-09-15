@@ -41,27 +41,33 @@
                     <button type="submit">Kirim</button>
                 </div>
             </form>
-            {{-- <div class="alert alert-success alert-dismissible fade show" role="alert">
-                <strong>Holy guacamole!</strong> You should check in on some of those fields below.
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div> --}}
+            @if (session()->has('message'))
+                <div class="alert alert-success alert-dismissible fade show text-left" role="alert">
+                    {{ session('message') }}
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            @endif
             <div class="scroll-ucapan p-4">
-            @for($i = 1; $i < 10; $i++)
+            @forelse($greetings as $greeting)
             <div class="card-ucapan text-left mb-3">
                 <div class="header-card-ucapan d-flex align-items-center mb-4">
                 <div>
-                    <p class="mb-0"><b>Bu Opik</b></p>
-                    <span class="badge badge-pill badge-success">Hadir</span>
-                    <span>Di Temanggung</span>
+                    <p class="mb-0"><b>{{ $greeting->name }}</b></p>
+                    <span class="badge badge-pill {{ ($greeting->attendance === 0 ? 'badge-success' : ($greeting->attendance === 1 ? 'badge-warning' : 'badge-danger') ) }}">{{ ($greeting->attendance === 0 ? 'Hadir' : ($greeting->attendance === 1 ? 'Akan Hadir' : 'Tidak Hadir') ) }}</span>
+                    <span>{{ $greeting->location }}</span>
                 </div>
                 </div>  
                 <div class="body-card-ucapan">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, magni eos facilis porro provident alias quod voluptatem placeat, quibusdam iste cupiditate, nesciunt sed vitae hic? Corrupti praesentium atque possimus recusandae.</p>
+                <p>{{ $greeting->text }}</p>
                 </div>
             </div>
-            @endfor
+            @empty
+                <div class="card-ucapan text-left mb-3">
+                    <p>No Records yet.</p>
+                </div>
+            @endforelse
             </div>
 
         </div>
