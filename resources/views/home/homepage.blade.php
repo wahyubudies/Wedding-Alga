@@ -14,54 +14,54 @@
     <div class="row justify-content-center">
       <div class="col-12">
         <header class="d-flex justify-content-center align-items-center">
-          <div class="header-flower-top"></div>
+          <div class="header-flower-top" data-aos="fade-down"></div>
           <div class="content-banner text-center">
             <p>The Wedding of</p>
             <h2>
               Wildan & Lia
             </h2>
-            <img src="{{ asset('img/header-flower-circle.png') }}" alt="">
+            <img src="{{ asset('img/header-flower-circle.png') }}" data-aos="zoom-in" data-aos-duration="1000" alt="">
             <h4>Countdown Timer</h4>
             <p>Our wedding will take place on</p>
             <p class="mt-4"><b>Mon, 4 Dec 2021</b></p>
             <div class="row">
               <div class="col-3">
-                <div class="box text-center text-white">
+                <div class="box text-center text-white" data-aos="zoom-in-up" data-aos-duration="1000">
                   <p class="mb-0" id="days-countdown">0</p>
                   <p class="mb-0">Days</p>
                 </div>
               </div>
               <div class="col-3">
-                <div class="box text-center text-white">
+                <div class="box text-center text-white" data-aos="zoom-in-up" data-aos-duration="1500">
                   <p class="mb-0" id="hours-countdown">0</p>
                   <p class="mb-0">Hours</p>
                 </div>
               </div>
               <div class="col-3">
-                <div class="box text-center text-white">
+                <div class="box text-center text-white" data-aos="zoom-in-up" data-aos-duration="2000">
                   <p class="mb-0" id="minutes-countdown">0</p>
                   <p class="mb-0">Mnts</p>
                 </div>
               </div>
               <div class="col-3">
-                <div class="box text-center text-white">
+                <div class="box text-center text-white" data-aos="zoom-in-up" data-aos-duration="2500">
                   <p class="mb-0" id="seconds-countdown">0</p>
                   <p class="mb-0">Scnds</p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="header-flower-bottom"></div>
+          <div class="header-flower-bottom" data-aos="fade-up"></div>
         </header>
         <section class="bg-white p-4">
-          <div class="surah-flower-top"></div>
+          <div class="surah-flower-top" data-aos="fade-up"></div>
           <div class="content-surah px-4 py-5">
             <p class="mb-0 text-white text-center">
               Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang. <br>
               <b>(QS. Ar Rum : 21)</b>
             </p>
           </div>
-          <div class="surah-flower-bottom"></div>
+          <div class="surah-flower-bottom" data-aos="fade-down"></div>
         </section>
         <section class="bg-mid-brown p-4">
           <div class="content-couple text-center">
@@ -72,7 +72,7 @@
             <p>
               Tanpa mengurangi rasa hormat. Kami mengundang Bapak/Ibu/Saudara/i serta Kerabat sekalian untuk menghadiri acara pernikahan kami:
             </p>
-            <img src="{{ asset('img/wildan.png') }}" alt="" class="couple-circle">
+            <img src="{{ asset('img/wildan.png') }}" alt="" class="couple-circle" data-aos="zoom-in">
             <h5 class="mb-3">Wildan Nurfadila Amin, S.Pt</h5>
             <p>
                 <b>Putra dari</b> <br>
@@ -80,7 +80,7 @@
                 Ibu Dra. Laila Indawati
             </p>
             <h1 class="mt-5">&</h1>
-            <img src="{{ asset('img/lia.png') }}" alt="" class="couple-circle">            
+            <img src="{{ asset('img/lia.png') }}" alt="" class="couple-circle" data-aos="zoom-in">
             <h5 class="mb-3">dr. Nur Amalia Permatasari</h5>
             <p>
                 <b>Putri dari</b> <br>
@@ -117,61 +117,7 @@
             <img src="{{ asset('img/left-border-flower.png') }}" alt="" class="left-border-flower">
           </div>
         </section>
-        <section class="bg-white">
-          <div class="content-ucapan text-center p-4">
-            <h4>Kirim Ucapan</h4>
-            <img src="{{ asset('img/maps-flower.png') }}" alt="">
-            <form action="" class="text-left my-4">
-              <div class="form-group">
-                <small class="mb-2 d-block">Nama Lengkap*</small>
-                <input type="text" class="form-control shadow-none" placeholder="ex: Muhammad Jailani">
-              </div>
-              <div class="form-group">
-                <small class="mb-2 d-block">Lokasi*</small>
-                <input type="text" class="form-control shadow-none" placeholder="ex: Kota Malang">
-              </div>
-              <div class="form-group mb-1">
-                <small class="mb-2 d-block">Kehadiran*</small>
-                <div class="d-flex flex-wrap">
-                  <label class="container-radio d-flex align-items-center mr-3">hadir
-                    <input type="radio" checked="checked" name="radio">
-                    <span class="checkmark"></span>
-                  </label>
-                  <label class="container-radio d-flex align-items-center mr-3">akan hadir
-                    <input type="radio" name="radio">
-                    <span class="checkmark"></span>
-                  </label>
-                  <label class="container-radio d-flex align-items-center">tidak hadir
-                    <input type="radio" name="radio">
-                    <span class="checkmark"></span>
-                  </label>
-                </div>
-              </div>
-              <div class="form-group">
-                <small class="mb-2 d-block">Ucapan*</small>
-                <textarea name="" id="" cols="30" rows="10" class="form-control shadow-none" placeholder="ex: Semoga menjadi pasangan yang sakinah mawadah warahmah."></textarea>
-              </div>
-            </form>
-
-            <div class="scroll-ucapan p-4">
-              @for($i = 1; $i < 10; $i++)
-              <div class="card-ucapan text-left mb-3">
-                <div class="header-card-ucapan d-flex align-items-center mb-4">
-                  <div>
-                    <p class="mb-0"><b>Bu Opik</b></p>
-                    <span class="badge badge-pill badge-success">Hadir</span>
-                    <span>Di Temanggung</span>
-                  </div>
-                </div>  
-                <div class="body-card-ucapan">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, magni eos facilis porro provident alias quod voluptatem placeat, quibusdam iste cupiditate, nesciunt sed vitae hic? Corrupti praesentium atque possimus recusandae.</p>
-                </div>
-              </div>
-              @endfor
-            </div>
-
-          </div>
-        </section>
+        <livewire:greeting />
         <section class="bg-white">
           <div class="content-amplop text-center p-4">
             <h4>Amplop Digital</h4>

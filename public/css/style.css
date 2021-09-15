@@ -40,6 +40,7 @@ header{
   max-width: 100%;
   margin: auto;
   position: relative;
+  overflow: hidden;
 }
 .header-flower-top{
   background: url(/img/header-flower-top.png) no-repeat center top;
