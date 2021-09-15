@@ -239,6 +239,24 @@ header{
   background-color: #f1f1f1;
   border:none;
 }
+.content-ucapan button{
+  border:2px solid var(--strong-brown);
+  color:var(--strong-brown);
+  padding: 10px 15px;
+  background-color: var(--white);
+  text-decoration: none;
+  border-radius: 50px;
+  width: 150px;
+  max-width: 100%;
+  font-size: .8rem;
+  margin: auto;
+  transition: all .50s ease-in-out;
+  display: table;
+}
+.content-ucapan button:hover{
+  background-color: var(--strong-brown);
+  color:var(--white);
+}
 .container-radio {
   display: block;
   position: relative;

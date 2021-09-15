@@ -15,6 +15,10 @@ class CreateGreetingsTable extends Migration
     {
         Schema::create('greetings', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('location');
+            $table->integer('attendance');
+            $table->text('text');
             $table->timestamps();
         });
     }

@@ -10,4 +10,9 @@ class Greeting extends Component
     {
         return view('livewire.greeting');
     }
+
+    public function submit()
+    {
+        dd('here');
+    }
 }

@@ -3,36 +3,39 @@
         <div class="content-ucapan text-center p-4">
             <h4>Kirim Ucapan</h4>
             <img src="{{ asset('img/maps-flower.png') }}" alt="">
-            <form action="" class="text-left my-4">
-            <div class="form-group">
-                <small class="mb-2 d-block">Nama Lengkap*</small>
-                <input type="text" class="form-control shadow-none" placeholder="ex: Muhammad Jailani">
-            </div>
-            <div class="form-group">
-                <small class="mb-2 d-block">Lokasi*</small>
-                <input type="text" class="form-control shadow-none" placeholder="ex: Kota Malang">
-            </div>
-            <div class="form-group mb-1">
-                <small class="mb-2 d-block">Kehadiran*</small>
-                <div class="d-flex flex-wrap">
-                <label class="container-radio d-flex align-items-center mr-3">hadir
-                    <input type="radio" checked="checked" name="radio">
-                    <span class="checkmark"></span>
-                </label>
-                <label class="container-radio d-flex align-items-center mr-3">akan hadir
-                    <input type="radio" name="radio">
-                    <span class="checkmark"></span>
-                </label>
-                <label class="container-radio d-flex align-items-center">tidak hadir
-                    <input type="radio" name="radio">
-                    <span class="checkmark"></span>
-                </label>
+            <form wire:submit.prevent="submit" class="text-left my-4 mb-5">
+                <div class="form-group">
+                    <small class="mb-2 d-block">Nama Lengkap*</small>
+                    <input type="text" class="form-control shadow-none" placeholder="ex: Muhammad Jailani">
                 </div>
-            </div>
-            <div class="form-group">
-                <small class="mb-2 d-block">Ucapan*</small>
-                <textarea name="" id="" cols="30" rows="10" class="form-control shadow-none" placeholder="ex: Semoga menjadi pasangan yang sakinah mawadah warahmah."></textarea>
-            </div>
+                <div class="form-group">
+                    <small class="mb-2 d-block">Lokasi*</small>
+                    <input type="text" class="form-control shadow-none" placeholder="ex: Kota Malang">
+                </div>
+                <div class="form-group mb-1">
+                    <small class="mb-2 d-block">Kehadiran*</small>
+                    <div class="d-flex flex-wrap">
+                    <label class="container-radio d-flex align-items-center mr-3">hadir
+                        <input type="radio" checked="checked" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container-radio d-flex align-items-center mr-3">akan hadir
+                        <input type="radio" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container-radio d-flex align-items-center">tidak hadir
+                        <input type="radio" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <small class="mb-2 d-block">Ucapan*</small>
+                    <textarea name="" id="" cols="30" rows="10" class="form-control shadow-none" placeholder="ex: Semoga menjadi pasangan yang sakinah mawadah warahmah."></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Kirim</button>
+                </div>
             </form>
 
             <div class="scroll-ucapan p-4">
@@ -53,5 +56,5 @@
             </div>
 
         </div>
-        </section>
+    </section>
 </div>
