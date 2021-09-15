@@ -93,7 +93,7 @@
         <section class="bg-white p-4">
           <div class="content-maps text-center">
             <h4>Lokasi Acara</h4>
-            <img src="{{ asset('img/maps-flower.png') }}" alt="">
+            <img src="{{ asset('img/maps-flower.png') }}" alt="" data-aos="fade-up">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.4890783364594!2d112.63780181477918!3d-7.948304194274966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd629c658012e69%3A0xd741a502d6f95888!2sJl.%20Letjend%20S.%20Parman%20No.87%2C%20Purwantoro%2C%20Kec.%20Blimbing%2C%20Kota%20Malang%2C%20Jawa%20Timur%2065126!5e0!3m2!1sen!2sid!4v1631360080462!5m2!1sen!2sid" class="mt-4" allowfullscreen="" loading="lazy"></iframe>
             <p class="my-4"><b>Ballroom Atria Hotel Malang</b> <br> Jl. Letjend S. Parman no 87-89, Purwantoro - Blimbing. Malang</p>
             <a href="https://www.google.com/maps/place/Jl.+Letjend+S.+Parman+No.87,+Purwantoro,+Kec.+Blimbing,+Kota+Malang,+Jawa+Timur+65126/@-7.948304,112.639991,15z/data=!4m5!3m4!1s0x2dd629c658012e69:0xd741a502d6f95888!8m2!3d-7.9483042!4d112.6399905?hl=en" class="mt-3 mx-auto d-block">Lihat Lokasi</a>
@@ -102,27 +102,27 @@
         <section class="bg-white p-4">
           <div class="content-akad text-center px-4 py-5 text-white">
             <h4>Akad Nikah Wildan & Lia</h4>
-            <img src="{{ asset('img/akad-flower.png') }}" alt="">
+            <img src="{{ asset('img/akad-flower.png') }}" alt="" data-aos="fade-up">
             <p>Tanpa mengurangi rasa hormat, karena situasi pandemi COVID-19, kami hanya dapat mengundang keluarga dan kerabat dekat.</p>
             <p>Atas hal tersebut kami sampaikan permohonan maaf. Terima kasih dari lubuk hati yang terdalam kami ucapkan kepada Bapak/Ibu/Saudara yang telah memahami serta memaklumi kondisi ini.</p>
             <p>Semoga kita semua selalu dalam lindungan, berkah, dan hidayah Allah SWT. Aamiin.</p>
           </div>
         </section>
         <section class="bg-easy-brown p-4 text-center">
-          <div class="content-streaming px-4 py-5 text-center d-flex align-items-center justify-content-center flex-column">
-            <img src="{{ asset('img/right-border-flower.png') }}" alt="" class="right-border-flower">
+          <div class="content-streaming px-4 py-5 text-center d-flex align-items-center justify-content-center flex-column overflow-hidden">
+            <img src="{{ asset('img/right-border-flower.png') }}" alt="" class="right-border-flower" data-aos="fade-down-left">
             <h4 class="mb-4">Live Streaming</h4>
             <p>Temui kami secara virtual untuk menyaksikan acara pernikahan kami.</p>
             <a href="#" class="d-block my-5">Menuju Streaming Youtube</a>
             <p>Dikarenakan LIVE YouTube hanya dapat ditampilkan ke sejumlah subscribers yang terbatas, silahkan subscribe terlebih dahulu agar dapat mengikuti jalannya aqad nikah.</p>
-            <img src="{{ asset('img/left-border-flower.png') }}" alt="" class="left-border-flower">
+            <img src="{{ asset('img/left-border-flower.png') }}" alt="" class="left-border-flower" data-aos="fade-up-right">
           </div>
         </section>
         <livewire:greeting />
         <section class="bg-white">
           <div class="content-amplop text-center p-4">
             <h4>Amplop Digital</h4>
-            <img src="{{ asset('img/akad-flower.png') }}" alt="">
+            <img src="{{ asset('img/akad-flower.png') }}" alt="" data-aos="fade-up">
             <p>Doa Restu Anda merupakan karunia yang sangat berarti bagi kami.</p>
             <p>Dan jika memberi adalah ungkapan tanda kasih Anda, Anda dapat memberi kado secara cashless.</p>
             <img class="my-4" src="https://logos-download.com/wp-content/uploads/2017/03/BCA_logo_Bank_Central_Asia.png" alt="">
@@ -133,13 +133,13 @@
         </section>
         <section class="bg-white">
           <div class="content-farewell text-center pt-5 pb-4 pr-4 pl-4">
-            <img class="circle-flower" src="{{ asset('img/header-flower-circle.png') }}" alt="">
+            <img class="circle-flower" src="{{ asset('img/header-flower-circle.png') }}" alt="" data-aos="zoom-in">
             <p>Merupakan suatu kehormatan dan kebahagiaan bagi kami, apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu. Atas kehadiran dan doa restunya, kami mengucapkan terima kasih.</p>
             <h4 class="my-5">Wassalamu'alaikum Wr. Wb.</h4>
             <h2 class="my-5">
               Wildan & Lia
             </h2>
-            <img src="{{ asset('img/maps-flower.png') }}" alt="">
+            <img src="{{ asset('img/maps-flower.png') }}" alt="" data-aos="fade-up">
           </div>
         </section>
         <footer>
