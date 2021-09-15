@@ -239,7 +239,7 @@ header{
   background-color: #f1f1f1;
   border:none;
 }
-.content-ucapan button{
+.content-ucapan button[type="submit"]{
   border:2px solid var(--strong-brown);
   color:var(--strong-brown);
   padding: 10px 15px;
@@ -253,7 +253,7 @@ header{
   transition: all .50s ease-in-out;
   display: table;
 }
-.content-ucapan button:hover{
+.content-ucapan button[type="submit"]:hover{
   background-color: var(--strong-brown);
   color:var(--white);
 }

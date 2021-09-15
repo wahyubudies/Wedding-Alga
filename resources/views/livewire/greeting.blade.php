@@ -6,38 +6,47 @@
             <form wire:submit.prevent="submit" class="text-left my-4 mb-5">
                 <div class="form-group">
                     <small class="mb-2 d-block">Nama Lengkap*</small>
-                    <input type="text" class="form-control shadow-none" placeholder="ex: Muhammad Jailani">
+                    <input wire:model.defer="name" type="text" class="form-control shadow-none" placeholder="ex: Muhammad Jailani">
+                    @error('name') <small class="text-danger">{{ $message }}</small> @enderror
                 </div>
                 <div class="form-group">
                     <small class="mb-2 d-block">Lokasi*</small>
-                    <input type="text" class="form-control shadow-none" placeholder="ex: Kota Malang">
+                    <input wire:model.defer="location" type="text" class="form-control shadow-none" placeholder="ex: Kota Malang">
+                    @error('location') <small class="text-danger">{{ $message }}</small> @enderror
                 </div>
                 <div class="form-group mb-1">
                     <small class="mb-2 d-block">Kehadiran*</small>
                     <div class="d-flex flex-wrap">
-                    <label class="container-radio d-flex align-items-center mr-3">hadir
-                        <input type="radio" checked="checked" name="radio">
-                        <span class="checkmark"></span>
-                    </label>
-                    <label class="container-radio d-flex align-items-center mr-3">akan hadir
-                        <input type="radio" name="radio">
-                        <span class="checkmark"></span>
-                    </label>
-                    <label class="container-radio d-flex align-items-center">tidak hadir
-                        <input type="radio" name="radio">
-                        <span class="checkmark"></span>
-                    </label>
+                        <label class="container-radio d-flex align-items-center mr-3">hadir
+                            <input type="radio" wire:model.defer="attendance" value="0" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container-radio d-flex align-items-center mr-3">akan hadir
+                            <input type="radio" wire:model.defer="attendance" value="1" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container-radio d-flex align-items-center">tidak hadir
+                            <input type="radio" wire:model.defer="attendance" value="2" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
                     </div>
-                </div>
+                    @error('attendance') <small class="text-danger">{{ $message }}</small> @enderror
+                </div>                
                 <div class="form-group">
                     <small class="mb-2 d-block">Ucapan*</small>
-                    <textarea name="" id="" cols="30" rows="10" class="form-control shadow-none" placeholder="ex: Semoga menjadi pasangan yang sakinah mawadah warahmah."></textarea>
+                    <textarea wire:model.defer="text" name="" id="" cols="30" rows="10" class="form-control shadow-none" placeholder="ex: Semoga menjadi pasangan yang sakinah mawadah warahmah."></textarea>
+                    @error('text') <small class="text-danger">{{ $message }}</small> @enderror
                 </div>
                 <div class="form-group">
                     <button type="submit">Kirim</button>
                 </div>
             </form>
-
+            {{-- <div class="alert alert-success alert-dismissible fade show" role="alert">
+                <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div> --}}
             <div class="scroll-ucapan p-4">
             @for($i = 1; $i < 10; $i++)
             <div class="card-ucapan text-left mb-3">
