@@ -406,3 +406,14 @@ footer{
   max-width: 100%;
   margin: auto;
 }
+
+#play-song{
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom:25px;
+  right: 25px;
+  background-color: var(--mid-brown);
+  border:none;
+}
