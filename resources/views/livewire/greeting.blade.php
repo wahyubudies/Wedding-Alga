@@ -56,7 +56,7 @@
                 <div>
                     <p class="mb-0"><b>{{ $greeting->name }}</b></p>
                     <span class="badge badge-pill {{ ($greeting->attendance === 0 ? 'badge-success' : ($greeting->attendance === 1 ? 'badge-warning' : 'badge-danger') ) }}">{{ ($greeting->attendance === 0 ? 'Hadir' : ($greeting->attendance === 1 ? 'Akan Hadir' : 'Tidak Hadir') ) }}</span>
-                    <span>{{ $greeting->location }}</span>
+                    <span>di {{ $greeting->location }}</span>
                 </div>
                 </div>  
                 <div class="body-card-ucapan">

@@ -39,16 +39,15 @@ function copyToClipboard(id)
 }
 
 // Play Music
-var myAudio = document.getElementById("myAudio");
-var isPlaying = false;
+let buttonPlay = document.querySelector('.material-icons');
+let audioMusic = document.querySelector('#audioMusic');
 
-function togglePlay() {
-  isPlaying ? myAudio.pause() : myAudio.play();
-};
-
-myAudio.onplaying = function() {
-  isPlaying = true;
-};
-myAudio.onpause = function() {
-  isPlaying = false;
-};
+function playMusic(){
+  if(buttonPlay.innerHTML === 'pause_circle'){
+    buttonPlay.innerHTML = 'play_circle';
+    audioMusic.pause();
+  }else{
+    buttonPlay.innerHTML = 'pause_circle';
+    audioMusic.play();
+  }
+}
