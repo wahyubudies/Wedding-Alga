@@ -1,5 +1,5 @@
 // Count Down
-let countDownDate = new Date("Nov 27, 2021 09:00:00").getTime();
+let countDownDate = new Date("Nov 28, 2021 13:00:00").getTime();
 let x = setInterval(function() {
   let now = new Date().getTime();
   let distance = countDownDate - now;
@@ -106,10 +106,10 @@ document.addEventListener( 'DOMContentLoaded', function () {
   var primarySlider = new Splide( '#primary-slider', {
 		type       : 'fade',
 		heightRatio: 1,
-    // autoHeight: true,
 		pagination : false,
 		arrows     : false,
 		cover      : true,
+    autoplay: true,
 	} );
 	
 	primarySlider.sync( secondarySlider ).mount();

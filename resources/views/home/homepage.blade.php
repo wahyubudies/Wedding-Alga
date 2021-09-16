@@ -40,8 +40,8 @@
             </h2>
             <img src="{{ asset('img/profile-kedua-mempelai.webp') }}" data-aos="zoom-in" data-aos-duration="1000" alt="">
             <h4>Countdown Timer</h4>
-            <p>Our wedding will take place on</p>
-            <p class="mt-4"><b>Sat, 27 Nov 2021</b></p>
+            <p>Our reception event will be held on :</p>
+            <p class="mt-4"><b>Sat, 28 Nov 2021</b></p>
             <div class="row">
               <div class="col-3">
                 <div class="box text-center text-white" data-aos="zoom-in-up" data-aos-duration="1000">
@@ -120,11 +120,38 @@
         </section>
         <section class="bg-white p-4">
           <div class="content-akad text-center px-4 py-5 text-white">
-            <h4>Akad Nikah Wildan & Lia</h4>
+            <h4>Akad Nikah Budi & Aliffia</h4>
             <img src="{{ asset('img/akad-flower.webp') }}" alt="" data-aos="fade-up">
-            <p>Tanpa mengurangi rasa hormat, karena situasi pandemi COVID-19, kami hanya dapat mengundang keluarga dan kerabat dekat.</p>
-            <p>Atas hal tersebut kami sampaikan permohonan maaf. Terima kasih dari lubuk hati yang terdalam kami ucapkan kepada Bapak/Ibu/Saudara yang telah memahami serta memaklumi kondisi ini.</p>
-            <p>Semoga kita semua selalu dalam lindungan, berkah, dan hidayah Allah SWT. Aamiin.</p>
+            <table class="text-left mb-5 mx-auto">
+              <tr class="text-center">
+                <td colspan="3"><b>AKAD NIKAH</b></td>                
+              </tr>
+              <tr>
+                <td>Tanggal</td>
+                <td>:</td>
+                <td>27 November 2021</td>
+              </tr>
+              <tr>
+                <td>Jam</td>
+                <td>:</td>
+                <td>09.00 - 11.00 </td>
+              </tr>
+            </table>
+            <table class="text-left mx-auto mb-4">
+              <tr class="text-center">
+                <td colspan="3"><b>RESEPSI</b></td>
+              </tr>
+              <tr>
+                <td>Tanggal</td>
+                <td>:</td>
+                <td>28 November 2021</td>
+              </tr>
+              <tr>
+                <td>Jam</td>
+                <td>:</td>
+                <td>13.00 - 17.00 </td>
+              </tr>
+            </table>
           </div>
         </section>
         <livewire:greeting />
@@ -163,7 +190,7 @@
             <p>Merupakan suatu kehormatan dan kebahagiaan bagi kami, apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu. Atas kehadiran dan doa restunya, kami mengucapkan terima kasih.</p>
             <h4 class="my-5">Wassalamu'alaikum Wr. Wb.</h4>
             <h2 class="my-5">
-              Wildan & Lia
+              Budi & Aliffia
             </h2>
             <img src="{{ asset('img/maps-flower.webp') }}" alt="" data-aos="fade-up">
           </div>
@@ -172,15 +199,14 @@
           <div class="content-footer bg-white pb-3 pt-3 text-center">
             <small>Cerita Cinta - Digital Invitation</small> <br>
             <small>Supported by ALGA Creative</small> <br>
-            <a class="d-block mt-4 mb-4" target="_blank" href="https://api.whatsapp.com/send?phone=6285852010311&text=Halo%20admin%2C%20mau%20bikin%20undangan%20digitalnya%20dong">Hubungi Kami</a>
+            <small class="mt-4 d-block">" Bikin Undangan Digitalmu dengan Klik "</small>
+            <a class="d-block mt-2    mb-4" target="_blank" href="https://api.whatsapp.com/send?phone=6285852010311&text=Halo%20admin%2C%20mau%20bikin%20undangan%20digitalnya%20dong">Hubungi Kami</a>            
           </div>
         </footer>
       </div>
     </div>
   </div>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js" integrity="sha512-wV7Yj1alIZDqZFCUQJy85VN+qvEIly93fIQAN7iqDFCPEucLCeNFz4r35FCo9s6WrpdDQPi80xbljXB8Bjtvcg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
   <script src="{{ asset('js/script.js') }}"></script>
