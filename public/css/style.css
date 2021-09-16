@@ -4,14 +4,16 @@
 :root{
   --white: #ffffff;
   --dark-grey: #DFDFDF;
-  --easy-brown: #E6DACA;
-  --mid-brown: #CBAC8F;
-  --strong-brown: #7E6F5C;
+  --easy-gold: #E6DACA;
+  --mid-gold: #ffefd1;
   --easy-grey: #4A4A4A;
+  --red-maroon: #681619;
+  --easy-gold: #e3c998;
 }
 body{
   background-color: var(--dark-grey);
   font-family: 'Roboto Mono', monospace;
+  overflow: hidden;
 }
 section{
   width: 500px;
@@ -19,10 +21,10 @@ section{
   margin: auto;
 }
 .bg-easy-brown {
-  background-color: var(--easy-brown);
+  background-color: var(--easy-gold);
 }
 .bg-mid-brown {
-  background-color: var(--mid-brown);
+  background-color: var(--mid-gold);
 }
 .container-custom{  
   width: 500px;
@@ -35,7 +37,7 @@ section{
   ===== */
 
 header{
-  background-color: var(--easy-brown);
+  background-color: var(--easy-gold);
   width: 500px;
   max-width: 100%;
   margin: auto;
@@ -43,7 +45,7 @@ header{
   overflow: hidden;
 }
 .header-flower-top{
-  background: url(/img/header-flower-top.png) no-repeat center top;
+  background: url(/img/header-flower-top.webp) no-repeat center top;
   width: 100%;
   height: 115px;
   background-size: contain;
@@ -53,7 +55,7 @@ header{
   right: 0;
 }
 .header-flower-bottom{
-  background: url('/img/header-flower-bottom.png') no-repeat bottom;
+  background: url('/img/header-flower-bottom.webp') no-repeat bottom;
   width: 100%;
   height: 100px;
   background-size: contain;
@@ -68,7 +70,7 @@ header{
 }
 .content-banner h2, .content-banner h4{
   font-family: 'Abril Fatface', cursive;
-  color: var(--strong-brown);
+  color: var(--red-maroon);
 }
 .content-banner img{
   width: 280px;
@@ -77,7 +79,7 @@ header{
   display: table;
 }
 .box{
-  background-color: var(--mid-brown);
+  background-color: var(--red-maroon);
   border-radius: 5px;
   padding: 5px 10px;
   font-size: .8rem;
@@ -87,17 +89,17 @@ header{
   ===== */
 
 .content-surah{
-  background-color: var(--strong-brown);
+  background-color: var(--red-maroon);
 }
 .surah-flower-top{
-  background: url('/img/surah-flower-top.png') no-repeat center 30px;
+  background: url('/img/surah-flower-top.webp') no-repeat center 30px;
   width: 404px;
   max-width: 100%;
   height: 100px;
   background-size:contain;
 }
 .surah-flower-bottom{
-  background: url('/img/surah-flower-bottom.png') no-repeat center top;
+  background: url('/img/surah-flower-bottom.webp') no-repeat center top;
   width: 204px;
   max-width: 100%;
   height: 100px;
@@ -116,7 +118,7 @@ header{
 }
 .content-couple h1, .content-couple h4, .content-couple h5{
   font-family: 'Abril Fatface', cursive;
-  color: var(--strong-brown);
+  color: var(--red-maroon);
 }
 .content-couple p{
   color: var(--easy-grey);
@@ -133,7 +135,7 @@ header{
 
 .content-maps h4{
   font-family: 'Abril Fatface', cursive;
-  color: var(--strong-brown);
+  color: var(--red-maroon);
 }
 .content-maps img{
   width: 100px;
@@ -146,8 +148,8 @@ header{
   border:0;
 }
 .content-maps a{
-  border:2px solid var(--strong-brown);
-  color:var(--strong-brown);
+  border:2px solid var(--red-maroon);
+  color:var(--red-maroon);
   padding: 10px 15px;
   background-color: var(--white);
   text-decoration: none;
@@ -159,7 +161,7 @@ header{
   transition: all .50s ease-in-out;
 }
 .content-maps a:hover{
-  background-color: var(--strong-brown);
+  background-color: var(--red-maroon);
   color:var(--white);
 }
 /* ===== 
@@ -167,11 +169,11 @@ header{
   ===== */
 
 .content-akad{
-  background: var(--strong-brown);
+  background: var(--red-maroon);
 }
 .content-akad h4{
   font-family: 'Abril Fatface', cursive;
-  color: var(--mid-brown);
+  color: var(--mid-gold);
 }
 .content-akad img{
   width: 100px;
@@ -183,14 +185,19 @@ header{
   ===== */
 
 .content-streaming{
-  border: 2px solid var(--strong-brown);  
+  border: 2px solid var(--mid-gold);  
   border-radius: 50px 0 50px 0;
-  height: 100vh;
+  /* height: 80vh; */
   position: relative;
+  padding: 100px 0;
 }
-.content-streaming img{
-    position: absolute;
-    width: 150px;
+.content-streaming img.right-border-flower{
+  position: absolute;
+  width: 150px;
+}
+.content-streaming img.left-border-flower{
+  position: absolute;
+  width: 90px;
 }
 .right-border-flower{
   top:0;
@@ -202,13 +209,13 @@ header{
 }
 .content-streaming h4{
   font-family: 'Abril Fatface', cursive;
-  color: var(--strong-brown);
+  color: var(--red-maroon);
 }
 .content-streaming a{
-  border:2px solid var(--strong-brown);
+  border:2px solid var(--red-maroon);
   color:var(--white);
   padding: 10px 15px;
-  background-color: var(--strong-brown);
+  background-color: var(--red-maroon);
   text-decoration: none;
   border-radius: 50px;
   width: 220px;
@@ -220,7 +227,7 @@ header{
 }
 .content-streaming a:hover{
   background-color: var(--white);
-  color:var(--strong-brown);
+  color:var(--red-maroon);
 }
 /* ===== 
   Ucapan Section
@@ -233,15 +240,27 @@ header{
 }
 .content-ucapan h4{
   font-family: 'Abril Fatface', cursive;
-  color: var(--strong-brown);
+  color: var(--red-maroon);
 }
 .content-ucapan .form-control{
   background-color: #f1f1f1;
   border:none;
 }
+.content-ucapan input::placeholder, .content-ucapan textarea::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(196, 196, 196);
+  opacity: 1; /* Firefox */
+}
+.content-ucapan input::-ms-input-placeholder, .content-ucapan textarea::-ms-input-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(196, 196, 196);
+  opacity: 1; /* Firefox */
+}
+.content-ucapan input:-ms-input-placeholder, .content-ucapan textarea:-ms-input-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(196, 196, 196);
+  opacity: 1; /* Firefox */
+}
 .content-ucapan button[type="submit"]{
-  border:2px solid var(--strong-brown);
-  color:var(--strong-brown);
+  border:2px solid var(--red-maroon);
+  color:var(--red-maroon);
   padding: 10px 15px;
   background-color: var(--white);
   text-decoration: none;
@@ -254,7 +273,7 @@ header{
   display: table;
 }
 .content-ucapan button[type="submit"]:hover{
-  background-color: var(--strong-brown);
+  background-color: var(--red-maroon);
   color:var(--white);
 }
 .container-radio {
@@ -267,7 +286,7 @@ header{
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  color: var(--mid-brown);
+  color: var(--red-maroon);
 }
 .container-radio input {
   position: absolute;
@@ -287,7 +306,7 @@ header{
   background-color: #ccc;
 }
 .container-radio input:checked ~ .checkmark {
-  background-color: var(--strong-brown);
+  background-color: var(--red-maroon);
 }
 .checkmark:after {
   content: "";
@@ -316,50 +335,9 @@ header{
   border-radius: 5px;
   background-color: var(--white);
 }
-/* ===== 
-  Amplop Section
-  ===== */
-
-/* .tooltip {
-  position: relative;
-  display: inline-block;
-}
-
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 140px;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px;
-  position: absolute;
-  z-index: 1;
-  bottom: 150%;
-  left: 50%;
-  margin-left: -75px;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.tooltip .tooltiptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
-}
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-  opacity: 1;
-} */
 .content-amplop h4{
   font-family: 'Abril Fatface', cursive;
-  color: var(--mid-brown);
+  color: var(--red-maroon);
 }
 .content-amplop img{
   width: 100px;
@@ -367,8 +345,8 @@ header{
   display: table;
 }
 .content-amplop button{
-  border:2px solid var(--strong-brown);
-  color:var(--strong-brown);
+  border:2px solid var(--red-maroon);
+  color:var(--red-maroon);
   padding: 10px 15px;
   background-color: var(--white);
   text-decoration: none;
@@ -380,7 +358,7 @@ header{
   transition: all .50s ease-in-out;
 }
 .content-amplop button:hover{
-  background-color: var(--strong-brown);
+  background-color: var(--red-maroon);
   color:var(--white);
 }
 /* ===== 
@@ -388,7 +366,7 @@ header{
   ===== */
 .content-farewell h4, .content-farewell h2{
   font-family: 'Abril Fatface', cursive;
-  color: var(--strong-brown);
+  color: var(--red-maroon);
 }
 .content-farewell img.circle-flower{
   width: 280px;
@@ -406,7 +384,64 @@ footer{
   max-width: 100%;
   margin: auto;
 }
+.content-footer a{
+  border:2px solid var(--red-maroon);
+  color:var(--red-maroon);
+  padding: 5px 10px;
+  background-color: var(--white);
+  text-decoration: none;
+  border-radius: 50px;
+  width: 100px;
+  max-width: 100%;
+  font-size: .6rem;
+  margin: auto;
+  transition: all .50s ease-in-out;
+}
+.content-footer a:hover{
+  background-color: var(--red-maroon);
+  color:var(--white);
+}
 
+.cover{
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background-color: var(--mid-gold);
+  z-index: 99;
+}
+.cover h2{
+  font-family: 'Abril Fatface', cursive;
+  color: var(--red-maroon);
+}
+.cover img{
+  width: 300px;
+  max-width: 96%;
+  margin: auto;
+  display: table;
+  background-color: var(--red-maroon);
+  border-radius: 15px;
+  padding: 10px;
+}
+.cover button{
+  border:2px solid var(--easy-gold);
+  color:var(--white);
+  padding: 10px 15px;
+  background-color: var(--easy-gold);
+  text-decoration: none;
+  border-radius: 50px;
+  width: 150px;
+  max-width: 100%;
+  font-size: .8rem;
+  margin: auto;
+  transition: all .50s ease-in-out;
+}
+.cover button:hover{
+  border:2px solid var(--red-maroon);
+  background-color: var(--red-maroon);
+  color:var(--white);
+}
 #play-song{
   border-radius: 100%;
   width: 50px;
@@ -414,6 +449,10 @@ footer{
   position: fixed;
   bottom:25px;
   right: 25px;
-  background-color: var(--mid-brown);
+  background-color: var(--red-maroon);
   border:none;
+  z-index: 50;
+}
+.splide{
+	width : 100%;
 }

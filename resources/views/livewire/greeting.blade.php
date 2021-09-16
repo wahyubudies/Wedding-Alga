@@ -2,7 +2,7 @@
     <section class="bg-white">
         <div class="content-ucapan text-center p-4">
             <h4>Kirim Ucapan</h4>
-            <img src="{{ asset('img/maps-flower.png') }}" alt="" data-aos="fade-up">
+            <img src="{{ asset('img/maps-flower.webp') }}" alt="" data-aos="fade-up">
             <form wire:submit.prevent="submit" class="text-left my-4 mb-5">
                 <div class="form-group">
                     <small class="mb-2 d-block">Nama Lengkap*</small>

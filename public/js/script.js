@@ -1,8 +1,5 @@
-// Animate AOS
-AOS.init();
-
 // Count Down
-let countDownDate = new Date("Dec 4, 2021 09:00:00").getTime();
+let countDownDate = new Date("Nov 27, 2021 09:00:00").getTime();
 let x = setInterval(function() {
   let now = new Date().getTime();
   let distance = countDownDate - now;
@@ -51,3 +48,69 @@ function playMusic(){
     audioMusic.play();
   }
 }
+
+// Slide Up Cover
+function slideUp(){
+  goSlide(document.querySelector('.cover'), 1000);
+  document.getElementsByTagName('BODY')[0].classList.add('overflow-auto');
+  audioMusic.play();
+
+  // Animate AOS
+  AOS.init();
+}
+
+// Slide Animation
+function goSlide(target, duration=500){
+  target.style.transitionProperty = 'height, margin, padding';
+  target.style.transitionDuration = duration + 'ms';
+  target.style.boxSizing = 'border-box';
+  target.style.height = target.offsetHeight + 'px';
+  target.offsetHeight;
+  target.style.overflow = 'hidden';
+  target.style.height = 0;
+  target.style.paddingTop = 0;
+  target.style.paddingBottom = 0;
+  target.style.marginTop = 0;
+  target.style.marginBottom = 0;
+  window.setTimeout( () => {
+        target.style.display = 'none';
+        target.style.removeProperty('height');
+        target.style.removeProperty('padding-top');
+        target.style.removeProperty('padding-bottom');
+        target.style.removeProperty('margin-top');
+        target.style.removeProperty('margin-bottom');
+        target.style.removeProperty('overflow');
+        target.style.removeProperty('transition-duration');
+        target.style.removeProperty('transition-property');
+  }, duration);
+}
+
+// Slider Gallery
+document.addEventListener( 'DOMContentLoaded', function () {
+	var secondarySlider = new Splide( '#secondary-slider', {
+		fixedWidth  : 100,
+		height      : 60,
+		gap         : 10,
+		cover       : true,
+		isNavigation: true,
+		focus       : 'center',
+    pagination: false,
+		breakpoints : {
+			'600': {
+				fixedWidth: 66,
+				height    : 40,
+			}
+		},
+	} ).mount();
+
+  var primarySlider = new Splide( '#primary-slider', {
+		type       : 'fade',
+		heightRatio: 1,
+    // autoHeight: true,
+		pagination : false,
+		arrows     : false,
+		cover      : true,
+	} );
+	
+	primarySlider.sync( secondarySlider ).mount();
+} );
