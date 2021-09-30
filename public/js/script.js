@@ -110,6 +110,7 @@ document.addEventListener( 'DOMContentLoaded', function () {
 		arrows     : false,
 		cover      : true,
     autoplay: true,
+    rewind : true,
 	} );
 	
 	primarySlider.sync( secondarySlider ).mount();

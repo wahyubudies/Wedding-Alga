@@ -198,15 +198,15 @@
         <footer>
           <div class="content-footer bg-white pb-3 pt-3 text-center">
             <small>Cerita Cinta - Digital Invitation</small> <br>
-            <small>Supported by ALGA Creative</small> <br>
-            <small class="mt-4 d-block">" Bikin Undangan Digitalmu dengan Klik "</small>
+            <small>Supported by <b>ALGA Creative</b></small> <br>
+            <small class="mt-4 d-block">- Bikin Undangan Digitalmu dengan Klik -</small>
             <a class="d-block mt-2    mb-4" target="_blank" href="https://api.whatsapp.com/send?phone=6285852010311&text=Halo%20admin%2C%20mau%20bikin%20undangan%20digitalnya%20dong">Hubungi Kami</a>            
           </div>
         </footer>
       </div>
     </div>
   </div>
-  
+
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
   <script src="{{ asset('js/script.js') }}"></script>
